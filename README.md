@@ -1,21 +1,21 @@
 Gemini Project
 ==============
-What's Gemini
+####What's Gemini
 Gemini是集成的redis客户端，对于主从结构的redis环境可以按照权重选取服务器返回,如果取数据过程发生异常过多则将权重降低.超过最大错误次数时就将服务器下线.等恢复之后重新设置初始权重并重新上线.目前支持黑名单，可以设置黑名单的时间
 
 
-Version 1.0
+##Version 1.0
 ===========
-What's New:
+####What's New:
 1.增加zookeeper管理集群，可以根据不同的路径来管理不同的集群。相互调用机器不受彼此影响。可以动态加载新增机器，下线机器。
 2.集成bigmemory，可以增加本地缓存，bigmemory的key需要自己申请，添加到classpath即可
 3.client增加新的方法。可以选择是否使用本地缓存
 
-===========
-最新demo
+
+######最新demo
 1.在zookeeper集群上创建相应目录
 ```java
-	ZookeeperClient.instance.create("/redis-server/views/search/servers/10.10.83.194:6379:3");
+    ZookeeperClient.instance.create("/redis-server/views/search/servers/10.10.83.194:6379:3");
 ```
 2.调用方法如下
 ```java
@@ -49,8 +49,7 @@ public class Demo4New {
 }
 ```
 
-Verison 0.9
-============
+##Verison 0.9
 
 新建配置文件redis.properties
 放到src目录下即可。
