@@ -7,7 +7,9 @@ Gemini是集成的redis客户端，对于主从结构的redis环境可以按照�
 ## Version 1.0
 #### What's New:
 1.增加zookeeper管理集群，可以根据不同的路径来管理不同的集群。相互调用机器不受彼此影响。可以动态加载新增机器，下线机器。
+
 2.集成bigmemory，可以增加本地缓存，bigmemory的key需要自己申请，添加到classpath即可
+
 3.client增加新的方法。可以选择是否使用本地缓存
 
 
