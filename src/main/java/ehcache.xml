@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ehcache>
+	<diskStore path="java.io.tmpdir" />
+	<defaultCache 
+		maxEntriesLocalHeap="10000" 
+		eternal="false"
+		timeToIdleSeconds="360000" 
+		timeToLiveSeconds="720000" 
+		overflowToDisk="false" />
+		
+	<cache 
+		name="keyvalue_cache" 
+		eternal="false" 
+		maxBytesLocalHeap="10M"
+		maxBytesLocalOffHeap="64M" 
+		timeToIdleSeconds="1800" 
+		timeToLiveSeconds="1800"
+		overflowToDisk="false" />
+		
+	<cache 
+		name="star_cache" 
+		eternal="false" 
+		maxBytesLocalHeap="10M"
+		maxBytesLocalOffHeap="64M" 
+		timeToIdleSeconds="1800" 
+		timeToLiveSeconds="1800"
+		overflowToDisk="false" />
+		
+	<cache 
+		name="show_cache" 
+		eternal="false" 
+		maxBytesLocalHeap="10M"
+		maxBytesLocalOffHeap="64M" 
+		timeToIdleSeconds="1800" 
+		timeToLiveSeconds="1800"
+		overflowToDisk="false" />
+	
+	<cache 
+		name="kis_cache" 
+		eternal="false" 
+		maxBytesLocalHeap="10M"
+		maxBytesLocalOffHeap="64M" 
+		timeToIdleSeconds="1800" 
+		timeToLiveSeconds="1800"
+		overflowToDisk="false" />
+		
+	<cache 
+		name="views_cache" 
+		eternal="false" 
+		maxBytesLocalHeap="10M"
+		maxBytesLocalOffHeap="64M" 
+		timeToIdleSeconds="600" 
+		timeToLiveSeconds="600"
+		overflowToDisk="false" />
+		
+	<sizeOfPolicy maxDepth="4000" maxDepthExceededBehavior="abort" />
+</ehcache>
