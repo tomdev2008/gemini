@@ -78,7 +78,7 @@ public class CacheManager {
 	 */
 	public final static void set(String name, Serializable key,
 			Serializable value) {
-		System.out.println("SET => " + name + ":" + key + "=" + value);
+//		System.out.println("SET => " + name + ":" + key + "=" + value);
 		if (name != null && key != null && value != null)
 			_GetCache(name, true).put(key, value);
 	}
