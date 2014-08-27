@@ -45,7 +45,7 @@ public class CacheManager {
 	 * @return
 	 */
 	public final static Object get(String name, Serializable key) {
-//		System.out.println("GET1 => " + name + ":" + key); 
+//		System.out.println("GET1 => " + name + ":" + key);
 		if (name != null && key != null)
 			return _GetCache(name, true).get(key);
 		return null;
